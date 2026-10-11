@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header class="gallery-header">
+    <h1>My Image Gallery</h1>
+    <p>Click any image to view it in fullscreen</p>
+  </header>
+
+ 
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+    <button class="filter-btn" data-filter="food">Food</button>
+  </div>
+
+ 
+  <main class="gallery" id="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Mountain river" />
+      <div class="overlay"><span>Mountain River</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1011/600/400" alt="City street" />
+      <div class="overlay"><span>City Lights</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Dog" />
+      <div class="overlay"><span>Cute Dog</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="food">
+      <img src="https://picsum.photos/id/1080/600/400" alt="Fruit" />
+      <div class="overlay"><span>Fresh Fruit</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1018/600/400" alt="Forest" />
+      <div class="overlay"><span>Forest Path</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1031/600/400" alt="Bridge" />
+      <div class="overlay"><span>Golden Bridge</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/1074/600/400" alt="Lion" />
+      <div class="overlay"><span>Wild Lion</span></div>
+    </div>
+
+    <div class="gallery-item" data-category="food">
+      <img src="https://picsum.photos/id/292/600/400" alt="Food" />
+      <div class="overlay"><span>Delicious Meal</span></div>
+    </div>
+  </main>
+
+ 
+  <div class="lightbox" id="lightbox">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <button class="nav-btn next" id="nextBtn">&#10095;</button>
+    <div class="caption" id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
